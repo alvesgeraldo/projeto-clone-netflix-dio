@@ -15,12 +15,12 @@
 
     <title>Netflix Clone</title>
 </head>
-<body>
+<body id="body">
     
     <section>
         <header>
             <div class="container">
-                <h1 class="logo">Netflix</h1>
+                <h1 class="logo">Neetflix</h1>
                 <nav class="menu-principal">
                     <a href="#">Início</a>
                     <a href="#">Séries</a>
@@ -37,13 +37,37 @@
                         <p class="descricao">No mundo do crime internacional, a INTERPOL lança um Alerta Vermelho, o que inicia uma caçada para capturar a mais notória ladra de artes do globo.</p>
                         <div class="botoes">
                             <button role="button" class="btn"><i class="fas fa-play"></i>Assitir Agora</button>
-                            <button role="button" class="btn"><i class="fas fa-info-circle"></i>Mais Informações</button>
+                            <button role="button" class="btn" onclick="on()"><i class="fas fa-info-circle"></i>Mais Informações</button>
                         </div>
                     </div>
                 </div>
         
             </div>
         </main>
+
+         
+        <div id="overlay">
+            <div id="text" class="text">
+                <h3>Alerta Vermelho (2021)</h3>
+                <p>Classificação: 12  - Lançamento: 05/11/2021 - Ação, Comédia, Crime, Thriller - 
+                    Duração - 1h 57m</p>
+                <h6>Sinopse</h6>
+                <p>No mundo do crime internacional, a INTERPOL lança um Alerta Vermelho, o que inicia uma caçada para capturar a mais notória ladra de artes do globo.</p>
+                <h6>Elenco:</h6>
+                <ul>
+                    <li>Dwayne Johnson - John Hartley</li>
+                    <li>Ryan Reynolds - Nolan Booth</li>
+                    <li>Gal Gadot - Sarah Black / The Bishopy</li>
+                    <li>Ritu Arya - Inspector Urvashi Das</li>
+                    <li>Chris Diamantopoulos - Sotto Voce</li>
+                    <li>Ivan Mbakop - Tambwe</li>
+                    <li>Vincenzo Amato - Director Gallo</li>
+                    <li>Rafael Petardi - Security Chief Ricci</li>
+                </ul>
+                <button role="button" class="btn" onclick="off()">Voltar</button>
+            </div>
+        </div>
+
     </section>
 
     <div class="carrosel-filmes">
@@ -87,52 +111,12 @@
         </div>
     </div>
 
-    <div class="carrosel-filmes">
-        <div class="container">
-            <div>
-                <h2>Ação</h2>
-            </div>
-            
-            <div class="owl-carousel owl-theme">
-                <div class="item">
-                    <img class="box-filme" src="img/min1.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="img/min2.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="img/min3.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="img/min4.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="img/min5.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="img/min6.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="img/min7.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="img/min8.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="img/min9.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="img/min10.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-
-
+    
     <script src="https://kit.fontawesome.com/3ca0835c19.js" crossorigin="anonymous"></script>
 
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
